@@ -7,61 +7,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .project {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-        .project:hover {
-            transform: scale(1.05);
-        }
-        .project img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .project h3 {
-            margin-top: 15px;
-        }
-        .project p {
-            color: #555;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .github-icon {
-            font-size: 24px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-        .github-icon:hover {
-            color: #6e5494; 
-        }
-    </style>
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -74,48 +20,96 @@
             <!-- Proyecto 1 -->
             <div class="col-lg-6 col-12 mb-4">
                 <div class="project">
-                    <img src="proyecto1.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción breve del proyecto 1.</p>
-                    <a href="https://github.com/usuario/repositorio1" class="github-icon" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <img src="img/completo.png" alt="Proyecto 1">
+                    <h3>Keys4Speed</h3>
+                    <p>Juego en el navegador hecho con Html, CSS y JS</p>
+                    <!-- Botón para ir a la sección del Proyecto 1 -->
+                    <a href="#proyecto1-detalle" class="btn btn-primary scroll-button">Ver más detalles</a>
                 </div>
             </div>
             <!-- Proyecto 2 -->
             <div class="col-lg-6 col-12 mb-4">
                 <div class="project">
-                    <img src="proyecto2.jpg" alt="Proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción breve del proyecto 2.</p>
-                    <a href="https://github.com/usuario/repositorio2" class="github-icon" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <img src="img/inicio.png" alt="Proyecto 2">
+                    <h3>API de Paises</h3>
+                    <p>Uso de una API con Html, CSS y JS</p>
+                    <!-- Botón para ir a la sección del Proyecto 2 -->
+                    <a href="#proyecto2-detalle" class="btn btn-primary scroll-button">Ver más detalles</a>
                 </div>
             </div>
             <!-- Proyecto 3 -->
             <div class="col-lg-6 col-12 mb-4">
                 <div class="project">
-                    <img src="proyecto3.jpg" alt="Proyecto 3">
-                    <h3>Proyecto 3</h3>
-                    <p>Descripción breve del proyecto 3.</p>
-                    <a href="https://github.com/usuario/repositorio3" class="github-icon" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <img src="img/portada.png" alt="Proyecto 3">
+                    <h3>Web de Senderismo (RevientaPatas)</h3>
+                    <p>Web de un grupo de senderismo hecha con Html, Bootstrap y JS</p>
+                    <!-- Botón para ir a la sección del Proyecto 3 -->
+                    <a href="#proyecto3-detalle" class="btn btn-primary scroll-button">Ver más detalles</a>
                 </div>
             </div>
             <!-- Proyecto 4 -->
             <div class="col-lg-6 col-12 mb-4">
                 <div class="project">
-                    <img src="proyecto4.jpg" alt="Proyecto 4">
-                    <h3>Proyecto 4</h3>
-                    <p>Descripción breve del proyecto 4.</p>
-                    <a href="https://github.com/usuario/repositorio4" class="github-icon" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <img src="img/login.png" alt="Proyecto 4">
+                    <h3>Aplicación de Empresa</h3>
+                    <p>Sitio web creado con Html, CSS, PHP y una base de datos SQL</p>
+                    <!-- Botón para ir a la sección del Proyecto 4 -->
+                    <a href="#proyecto4-detalle" class="btn btn-primary scroll-button">Ver más detalles</a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Sección de detalles del Proyecto 1 -->
+    <div id="proyecto1-detalle" class="container project-details">
+        <h3>Keys4Speed</h3>
+        <p>Este juego consiste en escribir correctamente las letras que aparecen en la pantalla antes de que se acabe el tiempo, que comienza en 30 segundos.
+            El objetivo es lograr la mayor puntuación posible antes de que el tiempo se agote, y la puntuación máxima se guarda al final de cada partida.
+        </p>
+        <p>Para ello he usado JavaScript para controlar la tecla pulsada por el jugador y dependiendo de si es correcta o no puede
+             el juego reacciona de una manera u otra.
+        </p>
+        <!-- Enlace a GitHub en la sección de detalles -->
+        <a href="https://github.com/Jaigardel/Keys4Speed/" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i> Ver en GitHub
+        </a>
+    </div>
+
+    <!-- Sección de detalles del Proyecto 2 -->
+    <div id="proyecto2-detalle" class="container project-details">
+        <h3>API de Paises</h3>
+        <p>En esta aplicación el usuario puede introducir un país manualmente o elegir uno del select para obtener información sobre el país que le interese.</p>
+        <p>Valiéndome de JavaScript, traje los datos necesarios de la API para rellenar el select y para ofrecer la información solicitada.</p>
+        <!-- Enlace a GitHub en la sección de detalles -->
+        <a href="https://github.com/Jaigardel/paisesAPI" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i> Ver en GitHub
+        </a>
+    </div>
+
+    <!-- Sección de detalles del Proyecto 3 -->
+    <div id="proyecto3-detalle" class="container project-details">
+        <h3>Web de Senderismo</h3>
+        <p>En esta web se buscaba invitar a los usuarios a unirse a un grupo de senderismo. Para ello mostré imágenes de rutas realizadas por el grupo
+             e información relacionada a este. También incluye un formulario para poder contactar al administrador del grupo.</p>
+        <p>Principalmente me he válido de Bootstrap para hacer la web responsive y con un poco de CSS adiconal he rematado alguos detalles.</p>     
+        <!-- Enlace a GitHub en la sección de detalles -->
+        <a href="https://github.com/Jaigardel/senderismoWeb" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i> Ver en GitHub
+        </a>
+    </div>
+
+    <!-- Sección de detalles del Proyecto 4 -->
+    <div id="proyecto4-detalle" class="container project-details">
+        <h3>Aplicación de Empresa</h3>
+        <p>Esta aplicación fue creada con una perspectiva de backend donde queríamos controlor el acceso a las distintas partes del sitio web.
+             Según el rol del usuario, podremos modificar los listados (admin, gestor) o sólamente ver los datos (consultor). El registro de un nuevo
+             usuario lo inicia un admin que manda automáticamente un email al nuevo usuario para que se autentifique y complete el registro.
+        </p>
+        <p>Mayormente está todo hecho con PHP, mostrando las listas con Html y dándole estilo con CSS</p>
+        <!-- Enlace a GitHub en la sección de detalles -->
+        <a href="https://github.com/Jaigardel/AccesoADatos" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i> Ver en GitHub
+        </a>
     </div>
 
     <footer>
